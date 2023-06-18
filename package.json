@@ -19,8 +19,15 @@
 		"webpack-dev-server": "^3.10.1"
 	},
 	"dependencies": {
+		"@fortawesome/fontawesome-svg-core": "^6.4.0",
+		"@fortawesome/free-solid-svg-icons": "^6.4.0",
+		"@fortawesome/vue-fontawesome": "^2.0.10",
 		"axios": "^0.19.0",
-		"vue": "^2.6.11"
+		"material-icons": "^1.13.8",
+		"moment": "^2.29.4",
+		"swiper-vue2": "^1.0.10",
+		"vue": "^2.6.11",
+		"vue-pagination-2": "^3.1.0"
 	},
 	"author": "",
 	"description": ""
