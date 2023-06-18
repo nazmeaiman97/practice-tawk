@@ -5,7 +5,6 @@ import routes from "./router";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import "swiper/swiper-bundle.css";
 
 Vue.use(VueRouter);
 library.add(fas);

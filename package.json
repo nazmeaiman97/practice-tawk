@@ -25,6 +25,7 @@
 		"axios": "^0.19.0",
 		"material-icons": "^1.13.8",
 		"moment": "^2.29.4",
+		"swiper": "^6.8.4",
 		"swiper-vue2": "^1.0.10",
 		"vue": "^2.6.11",
 		"vue-pagination-2": "^3.1.0"

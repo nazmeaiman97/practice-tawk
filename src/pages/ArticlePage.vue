@@ -39,12 +39,12 @@
                 <p class="text-2xl font-semibold mt-10 mb-2 text-center text-gray-400">Other categories</p>
                 <swiper class="relative w-[100%] justify-center items-center content-fit" ref="swiperRef"
                     :slides-per-view="3" :watch-overflow="true" :loop="false" :breakpoints="{
-                            1400: { slidesPerView: 3, spaceBetween: 10 },
-                            1300: { slidesPerView: 2, spaceBetween: 10 },
-                            900: { slidesPerView: 2, spaceBetween: 10 },
-                            700: { slidesPerView: 1, spaceBetween: 30 },
-                            370: { slidesPerView: 1, spaceBetween: 30 }
-                        }" :pagination="true" :navigation="true">
+                        1400: { slidesPerView: 3, spaceBetween: 10 },
+                        1300: { slidesPerView: 2, spaceBetween: 10 },
+                        900: { slidesPerView: 2, spaceBetween: 10 },
+                        700: { slidesPerView: 1, spaceBetween: 30 },
+                        370: { slidesPerView: 1, spaceBetween: 30 }
+                    }" :pagination="true" :navigation="true">
                     <swiper-slide v-for="(category, index) in categories" :key="category.id" :virtualIndex="index">
                         <div class="flex mx-20 justify-center my-10">
                             <card-category @click.native="goToArticle(category.id)" :title="category.title"
@@ -66,9 +66,11 @@ import Pagination from '../components/Pagination.vue';
 import SearchInput from '../components/SearchInput.vue';
 import { getCategories, getArticles } from '../services/getCategoriesServices';
 import { SwiperCore, Swiper, SwiperSlide } from 'swiper-vue2';
-import 'swiper/swiper-bundle.css';
 import NavigationText from "../components/NavigationText.vue";
-import { debounce } from '../helper/utils';
+
+// Import Swiper styles
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
 
 SwiperCore.use([Navigation, Pagination]);
 
