@@ -72,7 +72,7 @@ import NavigationText from "../components/NavigationText.vue";
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Pagination]);
 
 export default {
     components: {
