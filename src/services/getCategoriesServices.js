@@ -23,3 +23,15 @@ export const getArticles = async (id) => {
       return err;
     });
 };
+
+export const searchArticles = async (title) => {
+  return axios
+    .get(`${API_URL}/search/${title}`)
+    .then((res) => {
+      console.log("data", res.data);
+      return res;
+    })
+    .catch((err) => {
+      return err;
+    });
+};
